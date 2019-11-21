@@ -4,13 +4,13 @@ Developing and distributing python based tools for gnucash can be hard. Cloud ba
 
 ## How to build?
 
-Include required gnucash binaries first.
+Include required gnucash binaries first:
 
 ```
 ./include_tarball.sh 3.7
 ```
 
-Use docker to build container.
+Use docker to build container:
 
 ```
 docker build . -t gnucash-python:3.7
@@ -18,7 +18,7 @@ docker build . -t gnucash-python:3.7
 
 ## How to use? 
 
-Let your container extend this image.
+Let your container extend this image:
 
 ```
 FROM gnucash-python:3.7
